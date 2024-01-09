@@ -23,3 +23,135 @@ body
     padding: 10px 8%;
     position: relative;
 }
+
+
+/* netfilx red color logo */
+.logo 
+{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229,9,20);
+    fill: currentColor;
+    display: block;
+    cursor:pointer;
+}
+
+nav
+{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 0;
+}
+
+nav button
+{
+    border:0;
+    outline:0;
+    background:#db0001;
+    color:#fff;
+    padding:7px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor:pointer;
+}
+
+.language-btn 
+{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border:1px solid #fff;
+    padding:7px 10px;
+
+}
+
+
+/* to add a dropdown button ie caret-down button in english button box but not wotking */
+/* .fa-solid .fa-caret-down 
+{
+   background-color: #fff;
+   width:10px;
+   margin-left: 10px;
+ } */
+
+.header-content
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+  margin-top: 100px;
+
+}
+
+
+.header-content h1
+{
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* font-size: 3rem; */
+    font-weight: 900;
+ 
+}    
+
+
+
+.header-content h3
+{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.email-signup
+{
+   /* background: #fff; */
+   border-radius: 4px;
+   display: flex;
+   align-items: 30px;
+   margin-top:30px;
+   overflow:hidden;
+   text-align: justify;
+  
+}
+
+.email-signup input
+{
+    flex:1;
+    border:0;
+    outline:0;
+    margin-left:30px;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+    padding-left: 30px;
+}
+
+
+
+.email-signup button
+{
+    background:#db0001;
+    border:0;
+    outline:0;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    padding:15px 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: solid;
+}
+
+
+/* adding a chevron-right in get started button but not working  */
+.fa-solid.fa-chevron-right
+{
+
+    color:#fff;
+}
