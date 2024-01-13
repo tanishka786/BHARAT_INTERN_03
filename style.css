@@ -323,7 +323,14 @@ input[type="radio"]
     font-size: 18px;
     font-weight:400;
     margin-bottom: 30px;
+    text-decoration: underline;
+}
 
+.footer span
+{
+    font-size: 18px;
+    font-weight:400;
+    margin-bottom: 30px;
 }
 
 .footer .col
@@ -445,7 +452,7 @@ input[type="radio"]
     .faq h2
     {
         font-size:20px;
-        text-decoration: underline;
+      
     }
 
     .accordion .content
