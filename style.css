@@ -41,7 +41,7 @@ nav {
 nav button {
     border: 0;
     outline: 0;
-    background: #db0001;
+    background: rgb(229, 9, 20);
     color: #fff;
     padding: 0.6rem 0.8rem;
     border-radius: 0.25rem;
@@ -150,39 +150,40 @@ nav button {
 }
 
 .email-signup button {
-    background: #db0001;
+    background: rgb(229, 9, 20);
     border: 0;
     outline: 0;
-
-    font-size: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
     cursor: pointer;
     padding: 15px 30px;
     margin-left: 10px;
     border-radius: 5px;
-    font-weight: solid;
 }
 
-/* adding a chevron-right in get started button but not working  */
-.fa-solid.fa-chevron-right {
-    color: #fff;
+/* adding a chevron-right in get started button */
+.email-signup button .chevron {
+    display: inline-block;
+    height: 1.6rem;
+    vertical-align: middle;
+    text-align: center;
 }
 
 /*------------------------------------------------features-----------------------------------------------------------*/
 
 .features {
-    padding: 50px 12%;
     font-size: 22px;
 }
 
 .row {
     width: 100%;
-    padding: 50px 15% 10px;
-    /* padding: 50px 0; */
-    border-top: 6px solid #333;
+    padding: 50px 23% 10px;
     color: #aaa;
     /* display:flex; */
     align-items: baseline;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .text-col {
@@ -210,9 +211,11 @@ nav button {
 /*-------------------------------------------------------FAQ---------------------------------------------------------------*/
 
 .faq {
+    margin-top: 1.5rem;
     padding: 10px 12%;
     text-align: center;
     font-size: 18px;
+    position: relative;
 }
 
 .faq h2 {
@@ -287,7 +290,6 @@ input[type="radio"] {
 
 .footer {
     padding: 50px 15% 10px;
-    border-top: 6px solid #333;
     color: #aaa;
 }
 
@@ -411,4 +413,13 @@ input[type="radio"] {
     label::after {
         font-size: 22px;
     }
+}
+
+.gray-line-separator {
+    width: 100%;
+    left: 0;
+    height: 0.5rem;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
 }
