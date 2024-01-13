@@ -130,7 +130,7 @@ nav button
     border-radius: 5px;
     background-color: rgba(0,0,0,0.3);
     padding-left: 30px; 
-  
+    color:#fff;
 
 }
 
@@ -141,7 +141,7 @@ nav button
     background:#db0001;
     border:0;
     outline:0;
-    color:#fff;
+   
     font-size:16px;
     cursor:pointer;
     padding:15px 30px;
@@ -165,17 +165,22 @@ nav button
 {
     padding:50px 12%;
     font-size:22px;
+    
 }
+
 
 .row
-{
-    display:flex;
+{   
     width:100%;
-    align-items:center;
-    flex-wrap: wrap;
-    padding:50px 0;
-
+    padding: 50px 15% 10px;
+    /* padding: 50px 0; */
+    border-top:6px solid #333;
+    color:#aaa;
+    /* display:flex; */
+    align-items:baseline;
+    flex-wrap:wrap;
 }
+
 
 .text-col
 {
@@ -261,9 +266,11 @@ label::after
 
 }
 
+
 input[type="radio"]
 {
     display: none;
+    
 }
 
 .accordion .content
@@ -274,6 +281,7 @@ input[type="radio"]
     max-height: 0;
     overflow: hidden;
     transition:max-height 0.5s, padding 0.5s ;
+   
 }
 
 
@@ -286,4 +294,173 @@ input[type="radio"]
 .accordion input[type="radio"]:checked + label::after
 {
     transform:rotate(135deg);
+}
+
+
+.faq .email-signup 
+{
+    max-width: 600px;
+    margin:20px auto 60px;
+    
+}
+
+.faq small
+{
+    font-size:13px;
+}
+
+/*--------------------------------------------------------------------footer-------------------------------------------------------------------------------*/
+
+.footer
+{
+   padding: 50px 15% 10px;
+   border-top:6px solid #333;
+   color:#aaa;
+}
+
+.footer h2
+{
+    font-size: 18px;
+    font-weight:400;
+    margin-bottom: 30px;
+
+}
+
+.footer .col
+{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+}
+
+.footer .col a
+{
+    display:block;
+    text-decoration:underline;
+    color:#aaa;
+    font-size: 14px;
+    margin-bottom:10px;
+
+}
+
+.row1
+{
+    display:flex;
+    width:100%;
+    align-items:center;
+    flex-wrap: wrap;
+    padding:50px 0;
+}
+
+.footer .row1 
+{
+    align-items:flex-start;
+    padding:10px 0;
+
+}
+
+.footer .language-btn
+{
+    color:#fff;
+    padding:10px 20px;
+    border-radius:3px;
+}
+
+.copyright-text
+{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+/* ----------------------------------------- media-queries-for-small-screen ----------------------------------------------------*/
+
+@media only screen and (max-width: 600px)
+{
+    .logo
+    {
+        width:100px;
+    }
+
+    nav button
+    {
+        padding: 5px 10px ;
+    }
+
+    nav .language-btn
+    {
+        padding:4px 8px;
+
+    }
+
+    .header-content
+    {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+ 
+    }
+
+    .header-content h1
+    {
+         font-size: 30px;
+    }
+
+    .email-signup button 
+    {
+        font-size: 12px;
+        padding:10px 15px;
+
+    }
+
+    .text-col, .img-col
+    {
+        flex-basis: 100%;
+
+    }
+
+    .features h2
+    {
+        font-size: 30px;
+    } 
+
+    .features p
+    {
+        font-size: 15px;
+    } 
+
+    .row:nth-child(2), .row:nth-child(4)
+    {
+        flex-direction: column-reverse;
+    }
+
+    .features .row
+    {
+        padding:10PX 0 ;
+    }
+
+    .faq h2
+    {
+        font-size:20px;
+    }
+
+    .accordion .content
+    {
+        font-size:14px;
+
+    }
+
+    .accordion li label
+    {
+        padding:10px; 
+        font-size:14px;
+
+    }
+
+    label::after
+    {
+        font-size:  22px;
+    }
 }
