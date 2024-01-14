@@ -10,6 +10,10 @@ body {
     color: #fff;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 .header {
     width: 100%;
     height: 43.75rem;
@@ -125,13 +129,13 @@ nav button {
 }
 
 .email-signup {
-    /* background: #fff; */
     border-radius: 4px;
     display: flex;
-    align-items: 30px;
     margin-top: 30px;
     overflow: hidden;
     text-align: justify;
+    max-width: 600px;
+    margin: 20px auto 60px;
 }
 
 .email-signup input {
@@ -177,12 +181,15 @@ nav button {
 .row {
     width: 100%;
     padding: 4.5rem calc(16% + 3rem);
-    color: #aaa;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+}
+
+.row.rev {
+    flex-flow: row-reverse nowrap;
 }
 
 .text-col {
@@ -202,8 +209,8 @@ nav button {
 }
 
 .features h2 {
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 46px;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
@@ -218,8 +225,8 @@ nav button {
 }
 
 .faq h2 {
-    font-weight: 500;
-    font-size: 40px;
+    font-size: 46px;
+    font-weight: 800;
 }
 
 .accordion {
@@ -293,8 +300,8 @@ input[type="checkbox"] {
 }
 
 .footer h2 {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 46px;
+    font-weight: 800;
     margin-bottom: 30px;
     text-decoration: underline;
 }
@@ -347,12 +354,12 @@ input[type="checkbox"] {
 /* ----------------------------------------- media-queries-for-small-screen ----------------------------------------------------*/
 
 @media only screen and (max-width: 600px) {
-    .logo {
-        width: 100px;
+    .header {
+        padding: 10px 3rem;
     }
 
-    nav button {
-        padding: 5px 10px;
+    .logo {
+        width: 100px;
     }
 
     nav .language-btn {
@@ -374,6 +381,16 @@ input[type="checkbox"] {
         padding: 10px 15px;
     }
 
+    .row.rev {
+        flex-flow: column nowrap;
+    }
+
+    .text-col {
+        text-align: center;
+        padding: 3rem;
+        margin-bottom: 0;
+    }
+
     .text-col,
     .img-col {
         flex-basis: 100%;
@@ -387,17 +404,16 @@ input[type="checkbox"] {
         font-size: 15px;
     }
 
-    .row:nth-child(2),
-    .row:nth-child(4) {
-        flex-direction: column-reverse;
-    }
-
     .features .row {
         padding: 10px 0;
     }
 
     .faq h2 {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .accordion {
+        margin: 15px auto 40px;
     }
 
     .accordion .content {
@@ -405,12 +421,42 @@ input[type="checkbox"] {
     }
 
     .accordion li label {
-        padding: 10px;
+        padding: 24px;
         font-size: 14px;
     }
 
     label::after {
         font-size: 22px;
+    }
+
+    .questions-tel {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 50px 3rem 10px;
+    }
+
+    .footer .col {
+        flex-basis: 50%;
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+
+    .footer .col a {
+        margin-bottom: 20px;
+    }
+
+    .faq {
+        padding: 10px 3rem;
+    }
+
+    .faq .email-signup {
+        margin: 20px 1rem 60px;
+    }
+
+    .email-signup input {
+        margin-left: 0;
     }
 }
 
@@ -460,4 +506,9 @@ input[type="checkbox"] {
     max-height: 47%;
     top: 34%;
     left: 50%;
+}
+
+.phno {
+    text-decoration: underline;
+    color: #aaa;
 }
